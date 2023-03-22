@@ -8,7 +8,7 @@ void jack_bauer(void)
 {
 	int i,j;
 
-	i++;
+	i = 0;
 	while (i < 24)
 	{
 		j = 0;
@@ -17,7 +17,7 @@ void jack_bauer(void)
 			_putchar((i / 10) + '0');
 			_putchar((i % 10) + '0');
 			_putchar(':');
-			_putchat((j / 10) + '0');
+			_putchar((j / 10) + '0');
 			_putchar((j % 10) + '0');
 			j++;
 		}
