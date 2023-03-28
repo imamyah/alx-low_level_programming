@@ -20,5 +20,5 @@ void puts_half(char *str)
 	if (length_of_the_string % 2 != 0)
 		_putchar(n);
 	else
-		_putchar(length_of_the_string / 2);
+		_putchar(*str / 2);
 }
