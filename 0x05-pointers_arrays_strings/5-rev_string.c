@@ -16,6 +16,6 @@ void rev_string(char *s)
 	for (rev = counter; rev > 0; rev--)
 	{
 		_putchar(*s);
-		s--
+		s--;
 	}
 }
