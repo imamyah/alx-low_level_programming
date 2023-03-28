@@ -12,18 +12,17 @@ void puts2(char *str)
 {
 	int length = 0;
 	int i;
+	char *y = str;
 
-	while (*str != '\0')
+	while (*y != '\0')
 	{
 		length++;
-		str++;
+		y++;
 	}
 	for (i = 0; i <= length; i++)
 	{
 		if (i % 2 == 0)
-		{
 			_putchar(str[i]);
-		}
 	}
 	_putchar('\n');
 }
