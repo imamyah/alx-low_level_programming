@@ -11,14 +11,15 @@ void puts_half(char *str)
 {
 	char length_of_the_string = 0;
 	int n = (length_of_the_string - 1) / 2;
+	int i;
 
-	while (*str != '\0')
+	while (str[i] != '\0')
 	{
 		length_of_the_string++;
 		str++;
 	}
-	if (length_of_the_string % 2 != 0)
-		_putchar(n);
-	else
-		_putchar(*str / 2);
+		if (length_of_the_string % 2 != 0)
+			_putchar(n);
+		else
+			_putchar(str[i] / 2);
 }
