@@ -3,7 +3,7 @@
 /**
  * _strcpy - copies a string
  * @dest:copy to
- * @scr: copy from
+ * @src: copy from
  * Return: string
  */
 
