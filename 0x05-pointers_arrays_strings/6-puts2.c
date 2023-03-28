@@ -10,19 +10,13 @@
 
 void puts2(char *str)
 {
-	int length = 0;
 	int i;
-	char *y = str;
 
-	while (*y != '\0')
-	{
-		length++;
-		y++;
-	}
-	for (i = 0; i <= length; i++)
+	while (*(str + i) != '\0')
 	{
 		if (i % 2 == 0)
 			_putchar(str[i]);
+		i++;
 	}
 	_putchar('\n');
 }
