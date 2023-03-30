@@ -5,6 +5,7 @@
  * uses most n bytes from src
  * @src: input value
  * @dest: input value
+ * @n: input value
  *
  * Return: dest
  */
@@ -20,8 +21,8 @@ char *_strncat(char *dest, char *src, int n)
 	}
 	for (i = 0; i < n && src[i] != '\0'; i++)
 	{
-		dest[j+i] = src[i];
+		dest[j + i] = src[i];
 	}
-	dest[j+i] = '\0';
+	dest[j + i] = '\0';
 	return (dest);
 }
