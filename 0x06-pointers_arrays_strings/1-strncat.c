@@ -2,9 +2,10 @@
 
 /**
  * _strncat - concatenates two strings
- * it will use most n bytes from src
+ * uses most n bytes from src
  * @src: input value
  * @dest: input value
+ *
  * Return: dest
  */
 
