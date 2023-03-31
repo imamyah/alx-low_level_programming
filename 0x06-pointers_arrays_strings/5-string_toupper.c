@@ -7,9 +7,8 @@
  * Return: string in uppercase
  */
 
-char *string_toupper(char *)
+char *string_toupper(char *a)
 {
-	char a;
 	int i;
 
 	for (i = 0; a[i] != '\0'; i++)
