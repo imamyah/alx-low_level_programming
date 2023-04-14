@@ -33,16 +33,18 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 	len = j + i;
 
-	s3 = malloc(sizeof(char) * (len + 1));
+	s3 = malloc(sizeof(char) * len);
 
 	if (s3 == NULL)
 		return (NULL);
 
-	while (s1[i] != '\0')
+	i = j = 0;
+
+	while (s1[i])
 		s3[k++] = s1[i++];
 
-	while (s2[j] != '\0')
-		s3[k++] = s2[i++];
+	while (s2[j])
+		s3[k++] = s2[j++];
 
 	s3[k] = '\0';
 
