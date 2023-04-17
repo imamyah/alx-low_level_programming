@@ -9,7 +9,7 @@
  * Return: pointer to allocate memory
  */
 
-void *_calloc(unsigned int nmemb ,unsigned int size)
+void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	char *ar;
 	unsigned int i;
