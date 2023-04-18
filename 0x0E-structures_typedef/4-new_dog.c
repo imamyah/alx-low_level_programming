@@ -48,8 +48,14 @@ dog_t *new_dog(char *name, float age, char *owner)
 	if(new == NULL)
 		return (NULL);
 
-	ncpy = _stdup(name);
+	ncpy = _strdup(name);
 	if (!ncpy && name)
+	{
+		free(new);
+		return (NULL);
+	}
+	ocpy = _strdup(owner);
+	if (!ocpy && owner)
 	{
 		free(ncpy);
 		free(new);
@@ -58,7 +64,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 
 	new->name = ncpy;
 	new->age = age;
-	new-owner = owner;
+	new->owner = owner;
 
 	return (new);
 }
