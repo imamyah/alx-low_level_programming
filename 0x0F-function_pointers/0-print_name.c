@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * print_name - prints a name
+ * print_name - prints the name
  * @name: the string to add
  * @f: the pointer to function
  *
@@ -13,6 +13,5 @@ void print_name(char *name, void (*f)(char *))
 {
 	if (name == NULL || f == NULL)
 		return;
-
 	f(name);
 }
