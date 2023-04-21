@@ -5,6 +5,7 @@
 /**
  * print_all - prints anything
  * @format: type of arguments passsed to the function
+ * @...: variable of formats to be printed
  *
  * Return: nothing
  */
