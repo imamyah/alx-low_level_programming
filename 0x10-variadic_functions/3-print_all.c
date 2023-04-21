@@ -44,7 +44,7 @@ void print_all(const char * const format, ... )
 					j = 0;
 					break;
 			}
-			if (fotmat[i + 1] && j)
+			if (format[i + 1] && j)
 				printf(", ");
 
 			i++;
