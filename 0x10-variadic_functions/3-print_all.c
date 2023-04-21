@@ -1,29 +1,22 @@
 #include "variadic_functions.h"
 #include <stdio.h>
 #include <stdarg.h>
-
 /**
  * print_all - prints anything
  * @format: type of arguments passsed to the function
- * @...: variable of formats to be printed
- *
- * Return: nothing
  */
-
 void print_all(const char * const format, ...)
 {
-	va_list valist;
-	char *str;
+	va_list valist; char *str;
 	unsigned int i, j;
 
 	i = 0;
 	while (format != NULL)
 	{
 		va_start(valist, format);
-		while(format[i] != 0)
+		while (format[i] != 0)
 		{
 			j = 1;
-
 			switch (format[i])
 			{
 			case 'c':
@@ -47,7 +40,6 @@ void print_all(const char * const format, ...)
 			}
 			if (format[i + 1] && j)
 				printf(", ");
-
 			i++;
 		}
 		va_end(valist);
