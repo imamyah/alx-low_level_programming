@@ -16,7 +16,7 @@ void print_all(const char * const format, ... )
 	unsigned int i, j;
 
 	i = 0;
-	while (format != 0)
+	while (format != NULL)
 	{
 		va_start(valist, format);
 		while(format[i] != 0)
@@ -50,6 +50,7 @@ void print_all(const char * const format, ... )
 			i++;
 		}
 		va_end(valist);
+		break;
 	}
 	printf("\n");
 }
