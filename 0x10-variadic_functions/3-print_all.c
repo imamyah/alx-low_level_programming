@@ -9,7 +9,7 @@
  * Return: nothing
  */
 
-void print_all(const char * const format, ... )
+void print_all(const char * const format, ...)
 {
 	va_list valist;
 	char *str;
