@@ -8,13 +8,15 @@
 void print_all(const char * const format, ...)
 {
 	va_list valist; char *str;
-	unsigned int i = 0, j = 1;
+	unsigned int i, j;
 
+	i = 0;
 	while (format != NULL)
 	{
 		va_start(valist, format);
 		while (format[i] != 0)
 		{
+			j = 1;
 			switch (format[i])
 			{
 			case 'c': printf("%c", va_arg(valist, int));
