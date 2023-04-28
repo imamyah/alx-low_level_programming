@@ -5,7 +5,7 @@
 /**
  * add_node_end - adds a node at the end of a list_t list
  * @head: the address of the new element
- * str: the string to add
+ * @str: the string to add
  *
  * Return: the address of the new element, otherwise NULL
  */
