@@ -8,7 +8,7 @@
  * Return: 1 in Success, otherwise -1
  */
 
-int clear_bit(unsigned lonf int *n, unsigned int index)
+int clear_bit(unsigned long int *n, unsigned int index)
 {
 	unsigned int mask = 1;
 	unsigned int bit = sizeof(n) * 8 - 1;
