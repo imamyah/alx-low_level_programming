@@ -17,10 +17,10 @@ void print_binary(unsigned long int n)
 	{
 		/**calculate bitmask to check whether
 		 * ith bit of n is set or not*/
-		mask = 1 << i;
+		mask = n >> i;
 
 		/**ith bit of num is set*/
-		if (mask & n)
+		if (mask & 1)
 			_putchar('1');
 		/**ith bit of num is not set*/
 		else
