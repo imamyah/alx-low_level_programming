@@ -9,7 +9,7 @@
 
 void print_binary(unsigned long int n)
 {
-	int i;
+	int i, count = 0;
 	unsigned long int mask;
 
 	/**assuming 64-bit integer*/
@@ -19,13 +19,13 @@ void print_binary(unsigned long int n)
 		 * ith bit of n is set or not*/
 		mask = n >> i;
 
-		/**ith bit of num is set*/
 		if (mask & 1)
+		{
 			_putchar('1');
-		/**ith bit of num is not set*/
-		else
+			count++;
+		else if (count)
 			_putchar('0');
 	}
-	if (n == 0)
+	if (!count)
 		_putchar('0');
 }
