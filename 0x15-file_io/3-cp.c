@@ -20,8 +20,7 @@ int main(int argc, char *argv[])
 		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
 	}
 
-	buf = malloc(1024);
-
+	buf = malloc(sizeof(char) * 1024);
 	ffrom = open(argv[1], O_RDONLY);
 	rd = read(ffrom, buf, 1024);
 	if (ffrom == -1 || rd == -1)
