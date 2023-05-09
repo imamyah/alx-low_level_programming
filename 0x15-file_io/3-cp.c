@@ -30,7 +30,7 @@ int main(int argc, char *argv[])
 		dprintf(STDERR_FILENO, "Error: Can't read from %s\n", argv[1]);
 	}
 
-	fto = open(argv[2], O_WRONLY, 0664);
+	fto = open(argv[2], O_WRONLY | O_CREAT | O_TRUNC, 0664);
 	wr = write(fto, buf, rd);
 	if (fto == -1 || wr != rd)
 	{
