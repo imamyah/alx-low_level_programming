@@ -25,7 +25,7 @@ int main(int argc, char *argv[])
 	ffrom = open(argv[1], O_RDONLY);
 	rd = read(ffrom, buf, 1024);
 
-	while (r > 0)
+	while (wr > 0)
 	{
 		if (ffrom == -1 || rd == -1)
 		{
